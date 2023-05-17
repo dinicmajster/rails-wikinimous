@@ -1,0 +1,8 @@
+<div class='container mt-5'>
+
+    <h1><%= @article.title %></h1>
+
+    <p><%= @article.content %></p>
+
+    <i class="fa-solid fa-poo"><%= link_to "Delete #{@article.title}", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></i>
+</div>
